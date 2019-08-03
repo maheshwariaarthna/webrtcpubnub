@@ -82,7 +82,8 @@ const noVideoTimeoutMS = 5000;
         };
         // WebRTC phone object event for when a remote peer attempts to call you.
         const onIncomingCall = (fromUuid, callResponseCallback) => {
-            let username = document.getElementById(fromUuid).children[1].innerText;
+            //let username = document.getElementById(fromUuid).children[1].innerText;
+            let username='aa';
             incomingCall(username).then((acceptedCall) => {
                 if (acceptedCall) {
                     // End an already open call before opening a new one
@@ -233,7 +234,7 @@ const noVideoTimeoutMS = 5000;
                 incomingCallModal.classList.add(hide);
                 resolve(false);
             }
-            callFromSpan.innerHTML = 'Someone';
+            callFromSpan.innerHTML = name;
             incomingCallModal.classList.remove(hide);
         });
     }
