@@ -13,3 +13,7 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+mix.scripts([
+        'node_modules/pubnub-js-webrtc/dist/pubnub-js-webrtc.js',
+    ],  'public/js/app.js')
+

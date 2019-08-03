@@ -99,6 +99,7 @@
 </body>
 
 <script type="text/javascript" src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
-<script src="../dist/pubnub-js-webrtc.js"></script>
-<script src="app.js" type="text/javascript"></script>
+<script src="{{asset('/js/pubnub-js-webrtc.js')}}"></script>
+<script src="{{asset('js/app.js')}}" type="text/javascript"></script>
+<script src="/js/myapp.js" type="text/javascript"></script>
 </html>
