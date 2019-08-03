@@ -233,7 +233,7 @@ const noVideoTimeoutMS = 5000;
                 incomingCallModal.classList.add(hide);
                 resolve(false);
             }
-            callFromSpan.innerHTML = name;
+            callFromSpan.innerHTML = 'Someone';
             incomingCallModal.classList.remove(hide);
         });
     }
