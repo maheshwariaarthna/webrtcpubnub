@@ -307,13 +307,13 @@ const noVideoTimeoutMS = 5000;
         const jsTime = parseInt(messageEvent.timetoken.substring(0,13));
         const dateString = new Date(jsTime).toLocaleString();
         const senderUuid = messageEvent.publisher;
-        const senderName = senderUuid === pubnub.getUUID()
-            ? username
-            : document.getElementById(senderUuid).children[1].innerText;
+        //const senderName = senderUuid === pubnub.getUUID()
+            //? username
+            //: document.getElementById(senderUuid).children[1].innerText;
         const div = document.createElement('div');
         const b = document.createElement('b');
         div.id = messageEvent.timetoken;
-        b.innerHTML = `${senderName} (${dateString}): `;
+        b.innerHTML = `Someone`;
         div.appendChild(b);
         div.innerHTML += text;
         return div;
