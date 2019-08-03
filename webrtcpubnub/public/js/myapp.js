@@ -142,8 +142,8 @@ const noVideoTimeoutMS = 5000;
             if (div) div.remove();
         };
         pubnub = new PubNub({
-            publishKey : '_YOUR_PUBNUB_PUBLISH_API_KEY_HERE_',
-            subscribeKey : '_YOUR_PUBNUB_SUBSCRIBE_API_KEY_HERE_'
+            publishKey : 'pub-c-00b73799-b363-43a4-ae21-bc5f12e4087a',
+            subscribeKey : 'sub-c-e44f3bd2-b5c7-11e9-aec0-fa920b0289f3'
         });
         // This PubNub listener powers the text chat and online user list population.
         pubnub.addListener({
